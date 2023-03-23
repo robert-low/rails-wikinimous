@@ -1,0 +1,9 @@
+<div>
+  <h1>Wikinimous</h1>
+  <div>
+    <% @articles.each do |article| %>
+        <h3><%= article.title %></h2>
+        <p><%= article.content %></p>
+    <% end %>
+  </div>
+</div>
