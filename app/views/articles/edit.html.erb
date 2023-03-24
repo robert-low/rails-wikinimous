@@ -1,12 +1,6 @@
 <div>
   <h1>Edit article</h1>
   <div>
-    <%= form_with model: @article do |f| %>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-      <%= f.label :content %>
-      <%= f.text_area :content, size: "70x5" %>
-      <%= f.submit %>
-    <% end %>
+    <%= render 'form', article: @article %>
   </div>
 </div>
