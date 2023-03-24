@@ -1,14 +1,20 @@
-<h3><%= @article.title %></h3>
-<p><%= @article.content %></p>
-<br>
-<p>
-  Autem veniam quidem. Corporis quis consequuntur.
-  Enim dolor cum.Quaerat maiores repellat. Nesciunt harum numquam. Alias asperiores quisquam.
-  sapiente Quis similique quae.Quod eligendi veritatis.Pariatur nostrum et.
-</p>
-<br>
-<h4><%= link_to 'Edit', edit_article_path %></h4>
-<h4><%= link_to 'Delete',
-        article_path(@article),
-        data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
-</h4>
+<div class='container'>
+  <article>
+    <h1>
+      <%= @article.title %>
+        <small>
+          <%= link_to edit_article_path do %>
+            <i class="fa-regular fa-pen-to-square"></i>
+          <% end %>
+          <%= link_to article_path(@article),
+          data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } do %>
+            <i class="fa-regular fa-trash-can"></i>
+          <% end %>
+        </small>
+    </h1>
+
+    <hr>
+
+    <%= @article.content %>
+  </article>
+</div>
