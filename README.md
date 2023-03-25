@@ -1,24 +1,28 @@
-# README
+# Rails Wikinimous
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A task manager utilising basic CRUD features in Rails.
 
-Things you may want to cover:
+An anonymous wiki  where anyone can create a new article or update an existing one.
 
-* Ruby version
+## Ruby Version
 
-* System dependencies
+3.1.2
 
-* Configuration
+## Rails Version
 
-* Database creation
+7.0.4.3
 
-* Database initialization
+## Running the app locally
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone the repo
+   ```sh
+   git clone https://github.com/robert-low/rails-wikinimous.git
+   ```
+2. In your terminal run
+   ```sh
+   rails s
+   ```
+3. Go to
+   ```sh
+   http://localhost:3000/articles
+   ```
