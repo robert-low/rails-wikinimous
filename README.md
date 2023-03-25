@@ -1,5 +1,7 @@
 # Rails Wikinimous
 
+_This is a recreation based on a Rails tutorial at Le Wagon, which I have coded again, for teaching beginner programmers._
+
 A task manager utilising basic CRUD features in Rails.
 
 An anonymous wiki  where anyone can create a new article or update an existing one.
